@@ -1,0 +1,47 @@
+/* 5. Banner */
+.banner-area {
+    padding: 400px 0 350px;
+    background-color: $placeholder;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/579107bc579fb3d29bbf8014/1586407850349-6YII4HP6BFLKECYL1FK5/ke17ZwdGBToddI8pDm48kNvT88LknE-K9M4pGNO0Iqd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UbeDbaZv1s3QfpIA4TYnL5Qao8BosUKjCVjCf8TKewJIH3bqxw7fF48mhrq5Ulr0Hg/Dessert+Goals+Zoom+Background+6.png?format=2500w');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .prime-color {
+        color: $primary-color;
+    }
+    .style-change {
+        font-style: normal;
+    }
+    @include landscape-phone(){
+        padding: 280px 0 200px;
+    }
+    @include portrait-phone(){
+        padding: 200px 0 140px;
+    }
+}
+.banner-area2 {
+    padding: 210px 0 160px;
+    background-image: url('https://cdn.hipwallpaper.com/i/40/83/uh2tEQ.jpg');
+    position: relative;
+    z-index: 1;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $overlay2;
+        z-index: -1;
+    }
+    p {
+        color: $light;
+    }
+}
+.menu-bg {
+    background-image: url('../images/menu-bg.jpg');
+}
+.contact-bg {
+    background-image: url('../images/contact-bg.jpg');
+}
